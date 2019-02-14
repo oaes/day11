@@ -1,0 +1,38 @@
+<div class="wrapper">
+    <div class="box"></div>
+</div>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+  
+    width: 100px;
+    height: 100px;
+    background: lime;
+    position: relative;
+    left: 100px;
+    }
+    .box::before{
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: black;
+        position: relative;
+        left: -100px;
+    }
+    .box::after{
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background:paleturquoise;
+        position: relative;
+        left:100px;
+    }
+
+</style>
